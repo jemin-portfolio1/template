@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Sungsil';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_10@1.0/Sungsil.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+body{
+    margin-top: 100px;
+    position: relative;
+    font-family: 'Sungsil';
+    text-align: center;
+    background: url(../images/bg.jpg) center center fixed;
+    background-size: contain;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.box{
+    width: 1320px;
+    margin: 50px auto;
+    overflow: hidden;
+    display: flex;
+    z-index: -1;
+}
+.box li{
+    flex: 1;
+    width: 660px;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    transition: all 1s;
+}
+.box li p{
+    position: absolute;
+    font-size: 25px;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
+    transition: all 1s;
+}
+.box li:hover{
+    flex: 2;
+}
+.box li:hover p{
+    opacity: 1;
+}
+
+.button{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+}
