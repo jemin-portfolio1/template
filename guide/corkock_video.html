@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../images/corkock.png" rel="icon" type="image/png" sizes="32x32" ><!--파비콘-->
+    <title>코르콕 영상</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f9f6ed;
+            background-image: url(../Ebook/image/logo.png), url(../Ebook/image/chara.gif);
+            background-position: center 2%, 5% 110%;
+            background-repeat: no-repeat;
+        }
+        /*탑버튼*/
+        .top{
+            position:fixed; 
+            bottom:50px; 
+            right:50px; 
+        }
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/MehnN916K_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--탑버튼-->
+	<a href="../index.html" class="top"><img src="./home.png" alt="home버튼"></a>
+</body>
+</html>
