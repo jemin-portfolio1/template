@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-size:10px;
+}
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+body{
+    font-family: 'Pretendard-Regular';
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #fff;
+    background: url(../images/bg.jpg) no-repeat center center fixed;
+}
+
+#main{
+    text-align: center;
+    width: 140rem;
+    margin: 15rem auto;
+}
+h1{
+    display: block;
+    font-size: 5rem;
+}
+h2{
+    display: block;
+    font-size: 3rem;
+    margin: 5rem 0 10rem;
+}
+
+.list:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.list li{
+    float: left;
+    width: 23%;
+    margin: 0 1% 2%;
+    overflow: hidden;
+}
+.list li a img{
+    display: block;
+    max-width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+.list li a:hover img{
+    transform: scale(1.1);
+}
+
+.button{
+    position: fixed;
+    z-index: 99;
+    right: 3%;
+    bottom: 3%;
+    text-align: center;
+}
+.button a{
+    width: 7rem;
+    height: 7rem;
+    background: #de8d8b;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button a:nth-child(2){
+    margin-top: 2rem;
+    background-color: #333;
+}
+
+@media (max-width: 1439px){
+    #main{
+        width: 80%;
+        margin: 10rem auto;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2.5rem;
+        margin: 3rem 0 7rem;
+    }
+}
+
+@media (max-width: 1023px){
+    .list li{
+        width: 30%;
+        margin: 0 1.5% 3%;
+    }
+}
+
+@media (max-width: 767px){
+    #main{
+        width: 95%;
+    }
+    .button a{
+        width: 5rem;
+        height: 5rem;
+        font-size: 1.2rem;
+        background: #de8d8b;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button a:nth-child(2){
+        margin-top: 1rem;
+        background-color: #333;
+    }
+}
+
+@media (max-width: 499px){
+    #main{
+        width: 90%;
+        margin: 5rem auto;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        margin: 1.5rem 0 4rem;
+    }
+    .list li{
+        width: 45%;
+        margin: 0 2.5% 5%;
+    }
+}
